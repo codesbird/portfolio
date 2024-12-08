@@ -1,0 +1,293 @@
+:root {
+    --software-back: #0ab3ff;
+    --ai-solution: #2f40cc;
+    --web-development: #421198;
+    --data-analysis: #1fc178;
+    --web-application: #ef5249;
+    --api-development: #e269ff;
+
+    --python-card: #ff0000;
+    --django-card:#009fff;
+    --numpy-card:#04ff00;
+    --git-card:#ff9a00;
+    --api-card:rgb(0 255 223);
+    --extension-card:#0016ff;
+    --html-card:rgb(255 0 187);
+    --js-card:#ffe600;
+    --bootstrap-card:#04ff7e;
+
+    --text-color:white;
+}
+
+body {
+    transform: scroll 0.5s;
+}
+
+
+
+
+.image-background-shadow{
+    box-shadow: 0 0 20px 0px #faae63, 0 0 10px 5px #f9a65f, 0 0 14px 5px white;
+    border-radius: 50%;
+}
+
+.floating-item{
+    margin: -25% !important;
+    cursor: pointer;
+}
+.floating-item:last-child{
+    cursor: default;
+}
+
+
+.floating-item{
+    opacity: 0.1;
+    transition: all 0.8s;
+    filter: blur(3px);
+}
+
+.hero-image{
+    transition: all 0.5s;
+}
+
+.image-background-shadow:hover .hero-image{
+    /* filter: blur(3px) !important; */
+    box-shadow: 0 0 20px 0px #faae63, 0 0 10px 5px #f9a65f, 0 0 14px 5px white;
+
+
+}   
+
+.image-background-shadow:hover .floating-item{
+    opacity: 1;
+    margin: 0% !important;
+    filter: blur(0px);
+}
+
+
+.wpo-service-item .icon{
+    transition: background 0.5s!important;
+}
+.wpo-service-item:hover .icon{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+
+.grid {
+    width: 150px;
+}
+
+.hover-effect .wpo-service-item{
+    transition: background 1s !important;
+}
+
+.services-item .hover-effect:nth-child(1):hover div {
+    background-image: linear-gradient(151deg, #003af7, var(--software-back));
+    
+}
+
+.hover-effect:nth-child(2):hover div {
+    background-image: linear-gradient(151deg, #616bff, var(--web-development));
+
+}
+
+.hover-effect:nth-child(3):hover div {
+    background-image: linear-gradient(151deg, #ee0093, var(--api-development));
+}
+
+.hover-effect:nth-child(4):hover div {
+    background-image: linear-gradient(151deg, #8c2bb9, var(--web-application));
+
+}
+
+.hover-effect:nth-child(5):hover div {
+    background-image: linear-gradient(151deg, #4dd5fd, var(--data-analysis));
+}
+
+.hover-effect:nth-child(6):hover div {
+    background-image: linear-gradient(151deg, #4dd5fd, var(--ai-solution));
+
+} 
+
+.wpo-service-item .icon:hover {
+    background-color: rgb(46, 46, 46) !important;
+}
+
+.wpo-service-item button {
+    display: none !important;
+}
+
+.wpo-about-funfact div div {
+    transition: all 0.5s;
+    cursor:default;
+}
+
+.wpo-about-funfact div div p{
+    transition: color 0.5s;
+    color: var(--text-color) !important;
+}
+
+
+.wpo-about-funfact div:nth-child(1):hover > div{
+    /* background-color: var(--python-card) !important; */
+    background: linear-gradient(180deg, var(--python-card), rgba(31, 30, 28, .6) 30.59%) !important;
+
+}
+.wpo-about-funfact div:nth-child(1):hover > div p{
+    color: var(--python-card) !important;
+}
+
+
+.wpo-about-funfact div:nth-child(2):hover > div{
+    background: linear-gradient(180deg, var(--django-card), rgba(31, 30, 28, .6) 30.59%) !important;
+
+}
+.wpo-about-funfact div:nth-child(2):hover > div p{
+    color: var(--django-card) !important;
+}
+
+
+.wpo-about-funfact div:nth-child(3):hover > div{
+    background: linear-gradient(180deg, var(--numpy-card), rgba(31, 30, 28, .6) 30.59%) !important;
+
+}
+.wpo-about-funfact div:nth-child(3):hover > div p{
+    color: var(--numpy-card) !important;
+}
+
+
+.wpo-about-funfact div:nth-child(4):hover > div{
+    background: linear-gradient(180deg, var(--git-card), rgba(31, 30, 28, .6) 30.59%) !important;
+
+}
+.wpo-about-funfact div:nth-child(4):hover > div p{
+    color: var(--git-card) !important;
+}
+
+
+.wpo-about-funfact div:nth-child(5):hover > div{
+    background: linear-gradient(180deg, var(--api-card), rgba(31, 30, 28, .6) 30.59%) !important;
+
+}
+.wpo-about-funfact div:nth-child(5):hover > div p{
+    color: var(--api-card) !important;
+}
+
+
+.wpo-about-funfact div:nth-child(6):hover > div{
+    background: linear-gradient(180deg, var(--extension-card), rgba(31, 30, 28, .6) 30.59%) !important;
+
+}
+.wpo-about-funfact div:nth-child(6):hover > div p{
+    color: var(--extension-card) !important;
+}
+
+
+.wpo-about-funfact div:nth-child(7):hover > div{
+    background: linear-gradient(180deg, var(--html-card), rgba(31, 30, 28, .6) 30.59%) !important;
+
+}
+.wpo-about-funfact div:nth-child(7):hover > div p{
+    color: var(--html-card) !important;
+}
+
+
+.wpo-about-funfact div:nth-child(8):hover > div{
+    background: linear-gradient(180deg, var(--js-card), rgba(31, 30, 28, .6) 30.59%) !important;
+
+}
+.wpo-about-funfact div:nth-child(8):hover > div p{
+    color: var(--js-card) !important;
+}
+
+
+.wpo-about-funfact div:nth-child(9):hover > div{
+    background: linear-gradient(180deg, var(--bootstrap-card), rgba(31, 30, 28, .6) 30.59%) !important;
+
+}
+.wpo-about-funfact div:nth-child(9):hover > div p{
+    color: var(--bootstrap-card) !important;
+}
+
+
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 400 */
+
+.webtitle-name span {
+    font-family: 'Matrix Zone';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.projects-list .item{
+    transition: all 0.5s;
+}
+
+.projects-list div:nth-child(1) a:hover{
+    background-image: linear-gradient(205deg, #02064e, #d23d59, #fca9a3);
+}
+.projects-list div:nth-child(3) a:hover{
+    background-image: linear-gradient(205deg, #f7735d, #1241b7, #fca9a3);
+}
+.projects-list div:nth-child(2) a:hover{
+    background-image: linear-gradient(205deg, #000000 15%, #9400af, #fca9a3);
+}
+.projects-list div:nth-child(4) a:hover{
+
+    background-image: linear-gradient(205deg, #e90004, #f3140e, #fca9a3);
+
+}
+
+@media (min-width: 768px) {
+
+    .mini-scrollbar::-webkit-scrollbar{
+        height: 20px;
+    }
+}
+
+#news-blogs div img{
+    transition: transform 0.7s;
+}
+#news-blogs div p{
+    transition: color 0.7s;
+}
+#news-blogs div .card{
+    border: none;
+    border-radius: 3px;
+}
+#news-blogs div{
+    overflow: hidden;
+}
+
+#news-blogs div:hover  img{
+    transform: scale(1.4);
+}
+#news-blogs div:hover  p{
+    color: rgb(212, 212, 212) !important;
+}
+
+
+.pricing-items div div{
+    transition: background 0.5s;
+}
+
+.pricing-items div:hover .rounded{
+    background-color: #1f1d1d;
+}
+
+.social-icons ul  li:first-child:hover a{
+    color: rgb(52, 123, 255) !important;
+
+}
+
+.social-icons ul  li:nth-child(2):hover a{
+    color: rgb(163, 163, 163) !important;
+
+}
+
+.social-icons ul  li:last-child:hover a{
+    color: rgb(52, 255, 113) !important;
+
+}
