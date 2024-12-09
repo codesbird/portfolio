@@ -43,11 +43,17 @@ nav{
 
 .navbar-blur{
     background-color: #7272729c !important; /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    backdrop-filter: blur(10px) !important; /* Blur effect */
+    -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Optional shadow for better visibility */
 }
 
+.sidebtn{
+    background-color: #7272729c !important; /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 
 .image-background-shadow {
@@ -318,4 +324,52 @@ nav{
 
 .social-icons ul li:last-child:hover a {
     color: rgb(52, 255, 113) !important;
+}
+
+
+#resumebtn1 {
+    transition: all 1s;
+}
+
+#resumebtn2 {
+    transition: all 1s;
+    opacity: 0;
+}
+
+@media (max-width: 520px) {
+    #resumebtn1 {
+        opacity: 0;
+        /* display: none; */
+        width: 0px;
+    }
+
+    #resumebtn2 {
+        opacity: 1;
+    }
+}
+@media (min-width: 990px) {
+    #mobileMenus{
+        display: none !important;
+    }
+}
+
+#mobileMenus {
+    z-index: 9;
+    background: #262626;
+    top: 11% !important;
+    position: fixed;
+    color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    left: -40%;
+    transition: all 0.7s;
+}
+
+#mobileMenus ul li {
+    transition: background 0.5s;
+}
+
+#mobileMenus ul li:hover {
+    background: #242a30;
+
 }
