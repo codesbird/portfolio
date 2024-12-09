@@ -95,13 +95,24 @@
 
                                             <ul class="nav navbar-nav mb-2 mb-lg-0">
                                                 <li class="menu-item-has-children">
-                                                    <a href="/">Home</a>
+                                                    
+                                                    <a onclick="goTo('home')" >Home</a>
                                                 </li>
-                                                <li><a>About</a></li>
-                                                <li><a>Service</a></li>
-                                                <li><a>Portfolio</a></li>
-                                                <li><a>Contact</a></li>
-                                                <li><a>Blog</a></li>
+                                                <li>
+                                                    <a onclick="goTo('about')">Skills</a>
+                                                </li>
+                                                <li>
+                                                    <a onclick="goTo('service')">Service</a>
+                                                </li>
+                                                <li>
+                                                    <a onclick="goTo('_portfolio')">Portfolio</a>
+                                                </li>
+                                                <li>
+                                                    <a onclick="goTo('newns_latterBlogs')">Blogs</a>
+                                                </li>
+                                                <li>
+                                                    <a onclick="goTo('contact')">Contact</a>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -521,7 +532,7 @@
                         </svg></div>
                 </div>
 
-                <div class="wpo-work-area section-padding">
+                <div class="wpo-work-area section-padding" id="_portfolio">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-6 col-12">
@@ -643,7 +654,7 @@
                         </svg></div>
                 </div>
 
-                <div class="wpo-project-area pb-5 d-none" id="portfolio">
+                <div class="wpo-project-area pb-5 d-none" id="blogs">
                     <div class="container">
                         <div class="wpo-section-title-s2">
                             <div class="row align-items-center">
@@ -1162,7 +1173,7 @@
                         </svg></div>
                 </section>
 
-                <section class="wpo-blog-section section-padding" id="blog">
+                <section class="wpo-blog-section section-padding" id="newns_latterBlogs">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-5">
@@ -1173,8 +1184,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flex-row flex-nowrap row mini-scrollbar overflow-auto news-blogs"
-                            id="news-blogs">
+                        <div class="d-flex flex-row flex-nowrap row mini-scrollbar overflow-auto news-blogs" id="news-blogs">
 
                             <div class="card bg-dark mx-2" style="width:420px !important;">
                                 <div class="card">
@@ -1480,18 +1490,30 @@
                         class="text-white bi bi-x-lg"></i></button></div>
         </div>
         <ul class="responsivemenu">
-            <li class="d-flex justify-content-start align-items-center"><a onclick="goTo('__next')" class="px-2"><i
-                        class="bi bi-house px-3"></i><span>Home</span></a></li>
-            <li class="d-flex justify-content-start align-items-center"><a onclick="goTo()" class="px-2"><i
-                        class="bi bi-person-fill-gear px-3"></i><span>Service</span></a></li>
-            <li class="d-flex justify-content-start align-items-center"><a onclick="goTo()" class="px-2"><i
-                        class="bi bi-person-bounding-box px-3"></i><span>Portfolio</span></a></li>
-            <li class="d-flex justify-content-start align-items-center"><a onclick="goTo('contact')" class="px-2"><i
-                        class="bi bi-chat px-3"></i><span>Contact</span></a></li>
-            <li class="d-flex justify-content-start align-items-center"><a onclick="goTo()" class="px-2"><i
-                        class="bi bi-house px-3"></i><span>Blog</span></a></li>
-            <li class="d-flex justify-content-start align-items-center"><a onclick="goTo()" class="px-2"><i
-                        class="bi bi-info-circle px-3"></i><span>About</span></a></li>
+            <li class="d-flex justify-content-start align-items-center">
+                <a onclick="goTo('home')"  class="px-2"> <i class="bi bi-house px-3"></i> <span>Home</span>
+                </a>
+            </li>
+            <li class="d-flex justify-content-start align-items-center">
+                <a onclick="goTo('about')" class="px-2"><i class="bi bi-lightbulb px-3"></i> <span>Skills</span>
+                </a>
+            </li>
+            <li class="d-flex justify-content-start align-items-center">
+                <a onclick="goTo('service')" class="px-2"> <i class="bi bi-person-fill-gear px-3"></i> <span>Service</span>
+                </a>
+            </li>
+            <li class="d-flex justify-content-start align-items-center">
+                <a onclick="goTo('_portfolio')" class="px-2">  <i class="bi bi-person-bounding-box px-3"></i> <span>Portfolio</span>
+                </a>
+            </li>
+            <li class="d-flex justify-content-start align-items-center">
+                <a onclick="goTo('newns_latterBlogs')" class="px-2"> <i class="bi bi-pencil-square px-3"></i> <span>Blogs</span>
+                </a>
+            </li>
+            <li class="d-flex justify-content-start align-items-center">
+                <a onclick="goTo('contact')" class="px-2"> <i class="bi bi-chat px-3"></i> <span>Contact</span>
+                </a>
+            </li>
         </ul>
     </div>
 
