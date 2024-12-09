@@ -1,12 +1,12 @@
 
-function goTo(id){
+function goTo(id) {
     let element = document.getElementById(id);
 
     element.scrollIntoView(true);
 
 }
 
-function LatestNews(){
+function LatestNews() {
     let slick_track = document.getElementById('latestnews');
 
     setInterval(() => {
@@ -18,28 +18,28 @@ function LatestNews(){
 LatestNews()
 
 let opacity = 0;
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const fadeBox = document.querySelector('.projects-list');
     let scrollPosition = window.scrollY;
-    console.log("position",scrollPosition)
+    console.log("position", scrollPosition)
     let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
     console.log("lskjdflk")
-    
+
     // Calculate opacity based on scroll position
     opacity += 0.3
 
-    
+
     // Set the opacity of the fade-box
     fadeBox.style.opacity = opacity;
     // fadeBox.firstElementChild.style.marginTop = 0;
-  });
-  
+});
+
 
 //   ============================================= Scrolling Features  ================================================================
 
 function updateButtonStates(scrollContainer, leftButton, rightButton) {
     const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-    
+
     // Disable the left button if fully scrolled to the left
     if (scrollContainer.scrollLeft <= 0) {
         leftButton.disabled = true;
@@ -62,17 +62,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnRight = document.querySelector('.btn-success .bi-arrow-right-short').parentElement;
 
     const news_blogs = document.querySelector('.news-blogs');
-    const news_btnLeft  = document.querySelector('.news-scroll-left');
-    const news_btnRight  = document.querySelector('.news-scroll-right');
+    const news_btnLeft = document.querySelector('.news-scroll-left');
+    const news_btnRight = document.querySelector('.news-scroll-right');
 
-    
-    
+
+
     updateButtonStates(pricingItems, btnLeft, btnRight);
     updateButtonStates(news_blogs, news_btnLeft, news_btnRight);
 
 
     const scrollAmount = () => {
-        console.log(news_blogs.offsetWidth,pricingItems.offsetWidth)
+        console.log(news_blogs.offsetWidth, pricingItems.offsetWidth)
         // Determine the scroll amount based on the screen size
         if (window.innerWidth > 720) {
             return pricingItems.offsetWidth / 2; // Scroll 2-3 items
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
+
     btnRight.addEventListener('click', () => {
         pricingItems.scrollBy({
             left: scrollAmount(),
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
+
     news_btnRight.addEventListener('click', () => {
         news_blogs.scrollBy({
             left: scrollAmount(),
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-     // Update button states on scroll
+    // Update button states on scroll
     pricingItems.addEventListener("scroll", function () {
         updateButtonStates(pricingItems, btnLeft, btnRight);
     });
@@ -142,3 +142,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+// ===========================================================================================
+let mobileMenus = document.getElementById("mobileMenus");
+
+window.onclick = (e) => {
+    if (mobileMenus.offsetLeft > -5) {
+        mobileMenus.style.left = "-40%"
+    }
+}
+
+function hideSidebar() {
+    mobileMenus.style.left = '-40%';
+
+}
