@@ -6,16 +6,6 @@ function goTo(id) {
 
 }
 
-function LatestNews() {
-    let slick_track = document.getElementById('latestnews');
-
-    setInterval(() => {
-        // slick_track.scrollWidth("230px")
-        LatestNews()
-    }, 2000);
-}
-
-LatestNews()
 
 let opacity = 0;
 window.addEventListener('scroll', function () {
