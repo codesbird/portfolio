@@ -73,7 +73,7 @@ nav{
 
 .floating-item {
     opacity: 0.1;
-    transition: all 0.8s;
+    transition: all 0.4s;
     filter: blur(3px);
 }
 
@@ -109,7 +109,10 @@ nav{
     transition: background 1s !important;
 }
 
-.services-item .hover-effect:nth-child(1):hover div {
+.services-item .hover-effect:hover div {
+    background-color: #333a42 !important;
+}
+/* .services-item .hover-effect:nth-child(1):hover div {
     background-image: linear-gradient(151deg, #003af7, var(--software-back));
 }
 
@@ -131,7 +134,7 @@ nav{
 
 .hover-effect:nth-child(6):hover div {
     background-image: linear-gradient(151deg, #4dd5fd, var(--ai-solution));
-}
+} */
 
 .wpo-service-item .icon:hover {
     background-color: rgb(46, 46, 46) !important;
@@ -254,7 +257,17 @@ nav{
     transition: all 0.5s;
 }
 
-.projects-list div:nth-child(1) a:hover {
+.projects-list div {
+    margin: 5px;
+}
+.projects-list div a:hover {
+    background-color: #333a42 !important;
+}
+.projects-list div:last-child a:hover {
+    background-color: #333a42 !important;
+}
+
+/* .projects-list div:nth-child(1) a:hover {
     background-image: linear-gradient(205deg, #02064e, #d23d59, #fca9a3);
 }
 
@@ -270,7 +283,7 @@ nav{
 
     background-image: linear-gradient(205deg, #e90004, #f3140e, #fca9a3);
 
-}
+} */
 
 @media (min-width: 768px) {
 
