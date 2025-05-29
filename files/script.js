@@ -1,4 +1,5 @@
 
+
 function goTo(id) {
     let element = document.getElementById(id);
 
@@ -6,24 +7,12 @@ function goTo(id) {
 
 }
 
-function LatestNews() {
-    let slick_track = document.getElementById('latestnews');
-
-    setInterval(() => {
-        // slick_track.scrollWidth("230px")
-        LatestNews()
-    }, 2000);
-}
-
-LatestNews()
 
 let opacity = 0;
 window.addEventListener('scroll', function () {
     const fadeBox = document.querySelector('.projects-list');
-    let scrollPosition = window.scrollY;
-    console.log("position", scrollPosition)
+
     let maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    console.log("lskjdflk")
 
     // Calculate opacity based on scroll position
     opacity += 0.3
@@ -143,8 +132,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
 // ===========================================================================================
 let mobileMenus = document.getElementById("mobileMenus");
 
@@ -156,5 +143,6 @@ window.onclick = (e) => {
 
 function hideSidebar() {
     mobileMenus.style.left = '-40%';
-
 }
+
+

@@ -1124,7 +1124,7 @@
                                         <div class="col col-lg-6 col-md-12 col-12">
                                             <div class="wpo-contact-form">
                                                 <h2>Get In Touch</h2>
-                                                <form class="contact-validation-active">
+                                                <form class="contact-validation-active" id="contact_form" >
                                                     <div class="row">
                                                         <div class="col col-lg-6 col-12">
                                                             <div class="form-field"><input type="text" value=""
@@ -1136,24 +1136,26 @@
                                                         </div>
                                                         <div class="col col-lg-12 col-12">
                                                             <div class="form-field"><input type="phone" value=""
-                                                                    name="phone" placeholder="Your phone" /></div>
+                                                                    name="phone" placeholder="Phone" /></div>
                                                         </div>
-                                                        <div class="col col-lg-12 col-12 d-none">
-                                                            <div class="form-field"><select type="text" name="subject">
-                                                                    <option>Choose a Service</option>
-                                                                    <option>Web Design</option>
-                                                                    <option>Web Development</option>
-                                                                    <option>Marketing</option>
-                                                                </select></div>
+                                                      
+                                                        <div class="col col-lg-12 col-12 my-3">
+                                                            <input type="text" name="subject" id="subject" placeholder="Subject">
                                                         </div>
                                                         <div class="col col-lg-12 col-12">
-                                                            <textarea type="text" name="message"  placeholder="Message"></textarea></div>
+                                                            <textarea type="text" name="message"  placeholder="Message"></textarea>
+                                                        </div>
                                                     </div>
                                                     <div class="submit-area">
-                                                        <button type="submit" data-bs-toggle="tooltip" data-bs-title="Double-check your details before sending—don’t miss out!"
-                                                            class="btn btn-success px-4 py-1 d-flex justify-content-center align-items-center mx-auto"
-                                                            style="border-radius:25px;">Submit Now <i
-                                                                class="bi bi-arrow-right-short fs-3 text-white"></i></button>
+                                                        
+                                                        <button type="submit" data-bs-toggle="tooltip" data-bs-title="Check your details before sending—don’t miss out!" class="btn btn-success px-4 py-1 d-flex justify-content-center align-items-center mx-auto" style="border-radius:25px;">
+                                                            
+                                                            Submit Now 
+                                                            <i class="bi bi-check-circle-fill mx-2 fs-3 text-white d-none"></i>
+                                                            <i class="bi bi-arrow-right mx-2 fs-3 text-white"></i>
+                                                            <span class="spinner-border spinner-border-sm mx-2 p-3 d-none" id="spinner" aria-hidden="true"></span>
+                                                            </span>
+                                                        </button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -1169,8 +1171,8 @@
                                                         <div class="info-text"><span>Office Address</span></div>
                                                     </div>
                                                 </div>
-                                                <div class="info-item">
-                                                    <h5><a href="mailto:monusainideveloper@gmail.com">monusainideveloper@gmail.com</a>
+                                                <div class="info-item d-none">
+                                                    <h5><a href="mailto:-----------@gmail.com">----------</a>
                                                     </h5>
                                                     <div class="info-wrap">
                                                         <div class="info-icon"><i
@@ -1178,8 +1180,8 @@
                                                         <div class="info-text"><span>Official Mail</span></div>
                                                     </div>
                                                 </div>
-                                                <div class="info-item">
-                                                    <h2>+91 8696807790</h2>
+                                                <div class="info-item d-none">
+                                                    <h2>+91 0000000000</h2>
                                                     <div class="info-wrap">
                                                         <div class="info-icon"><i
                                                                 class="bi text-white fs-4 bi-telephone-forward"></i>
@@ -1606,6 +1608,18 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./files/script.js"></script>
+    <script src="./files/contact.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "JXyCDFxW5MaWnpvYB",
+        });
+    })();
+    </script>
+    
     <script>
         // Enabling the tooltips
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
