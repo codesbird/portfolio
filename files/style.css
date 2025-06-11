@@ -154,92 +154,54 @@ nav{
     color: var(--text-color) !important;
 }
 
-
-.wpo-about-funfact div:nth-child(1):hover>div {
-    /* background-color: var(--python-card) !important; */
-    background: linear-gradient(180deg, var(--python-card), rgba(31, 30, 28, .6) 30.59%) !important;
-
+.wpo-about-funfact div:nth-child(1):hover>div,.wpo-about-funfact div:nth-child(1):hover>div p {
+    color: var(--html-card) !important;
+    background: linear-gradient(180deg, var(--html-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-
-.wpo-about-funfact div:nth-child(1):hover>div p {
+.wpo-about-funfact div:nth-child(2):hover>div,.wpo-about-funfact div:nth-child(2):hover>div p {
+    background: linear-gradient(180deg, var(--python-card), rgba(31, 30, 28, .6) 30.59%) !important;
     color: var(--python-card) !important;
 }
-
-
-.wpo-about-funfact div:nth-child(2):hover>div {
-    background: linear-gradient(180deg, var(--django-card), rgba(31, 30, 28, .6) 30.59%) !important;
+.wpo-about-funfact div:nth-child(3):hover>div,.wpo-about-funfact div:nth-child(3):hover>div p {
+    color: var(--bootstrap-card) !important;
+    background: linear-gradient(180deg, var(--bootstrap-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-
-.wpo-about-funfact div:nth-child(2):hover>div p {
-    color: var(--django-card) !important;
+.wpo-about-funfact div:nth-child(4):hover>div,.wpo-about-funfact div:nth-child(4):hover>div p {
+    color: var(--js-card) !important;
+    background: linear-gradient(180deg, var(--js-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-
-
-.wpo-about-funfact div:nth-child(3):hover>div {
-    background: linear-gradient(180deg, var(--numpy-card), rgba(31, 30, 28, .6) 30.59%) !important;
-}
-
-.wpo-about-funfact div:nth-child(3):hover>div p {
-    color: var(--numpy-card) !important;
-}
-
-
-.wpo-about-funfact div:nth-child(4):hover>div {
-    background: linear-gradient(180deg, var(--git-card), rgba(31, 30, 28, .6) 30.59%) !important;
-}
-
-.wpo-about-funfact div:nth-child(4):hover>div p {
-    color: var(--git-card) !important;
-}
-
-
-.wpo-about-funfact div:nth-child(5):hover>div {
+.wpo-about-funfact div:nth-child(7):hover>div ,.wpo-about-funfact div:nth-child(7):hover>div p {
+    color: var(--api-card) !important;
     background: linear-gradient(180deg, var(--api-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-
-.wpo-about-funfact div:nth-child(5):hover>div p {
-    color: var(--api-card) !important;
+.wpo-about-funfact div:nth-child(8):hover>div ,.wpo-about-funfact div:nth-child(8):hover>div p {
+    color: var(--git-card) !important;
+    background: linear-gradient(180deg, var(--git-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-
-
-.wpo-about-funfact div:nth-child(6):hover>div {
+.wpo-about-funfact div:nth-child(9):hover>div ,.wpo-about-funfact div:nth-child(9):hover>div p {
+    color: var(--numpy-card) !important;
+    background: linear-gradient(180deg, var(--numpy-card), rgba(31, 30, 28, .6) 30.59%) !important;
+}
+.wpo-about-funfact div:nth-child(11):hover>div,.wpo-about-funfact div:nth-child(11):hover>div p {
+    color: #0bbedd !important;
+    background: linear-gradient(180deg,#0bbedd, rgba(31, 30, 28, .6) 30.59%) !important;
+}
+.wpo-about-funfact div:nth-child(12):hover>div,.wpo-about-funfact div:nth-child(12):hover>div p {
+    color: #9900ff !important;
+    background: linear-gradient(180deg, #9900ff, rgba(31, 30, 28, .6) 30.59%) !important;
+}
+.wpo-about-funfact div:nth-child(5):hover>div, .wpo-about-funfact div:nth-child(5):hover>div p {
+    color: var(--django-card) !important;
+    background: linear-gradient(180deg, var(--django-card), rgba(31, 30, 28, .6) 30.59%) !important;
+}
+.wpo-about-funfact div:nth-child(10):hover>div,.wpo-about-funfact div:nth-child(10):hover>div p {
+    color: var(--extension-card) !important;
     background: linear-gradient(180deg, var(--extension-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-
-.wpo-about-funfact div:nth-child(6):hover>div p {
-    color: var(--extension-card) !important;
+.wpo-about-funfact div:nth-child(6):hover>div,.wpo-about-funfact div:nth-child(6):hover>div p {
+    color: #ff0464 !important;
+    background: linear-gradient(180deg, #ff0464, rgba(31, 30, 28, .6) 30.59%) !important;
 }
-
-
-.wpo-about-funfact div:nth-child(7):hover>div {
-    background: linear-gradient(180deg, var(--html-card), rgba(31, 30, 28, .6) 30.59%) !important;
-
-}
-
-.wpo-about-funfact div:nth-child(7):hover>div p {
-    color: var(--html-card) !important;
-}
-
-
-.wpo-about-funfact div:nth-child(8):hover>div {
-    background: linear-gradient(180deg, var(--js-card), rgba(31, 30, 28, .6) 30.59%) !important;
-
-}
-
-.wpo-about-funfact div:nth-child(8):hover>div p {
-    color: var(--js-card) !important;
-}
-
-
-.wpo-about-funfact div:nth-child(9):hover>div {
-    background: linear-gradient(180deg, var(--bootstrap-card), rgba(31, 30, 28, .6) 30.59%) !important;
-
-}
-
-.wpo-about-funfact div:nth-child(9):hover>div p {
-    color: var(--bootstrap-card) !important;
-}
-
 
 
 
