@@ -70,6 +70,9 @@
             color: rgb(173, 173, 173);
 
         }
+        .smothscroll{
+            z-index:15 !important;
+        }
     </style>
 
 
@@ -80,14 +83,7 @@
         <button title="Chat-Boat Tech2Saini" style="background-color: transparent;border: none;outline: none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><img src="./files/chatbot.png" width="40px" alt=""></button>
     </div>
 
-    <div onclick="showSidebar(this)"class="showmenu position-absolute left-start top-center sidebtn"style="position: fixed !important;top: 17.3%;left: -12px;z-index: 5;">
-
-        <button type="button" class="navbar-toggler open-btn"
-            onclick="document.getElementById('mobileMenus').style.left = '0%'">
-            <i class="bi bi-chevron-bar-right"></i>
-        </button>
-    </div>
-
+    
     <!-- Chat-Boat button -->
     <div id="__next" style="z-index:100;">
         <div id="scroll">
@@ -97,17 +93,15 @@
                     <header id="header" class="wpo-header-style-1">
                         <div class="wpo-site-header">
                             <nav class="navigation navbar navbar-expand-lg navbar-light py-0" id="navblur">
-                                <div class="d-flex bd-highlight w-100 px-0 mx-0" style="height: 60px;">
-                                    <div class="p-2 flex-fill bd-highlight d-flex py-0 align-items-center">
-                                        <img src="./files/logo.png" style="width:6rem;margin-top: 30px;" alt="">
-                                        <span
-                                            style="font-size:35px;font-size: 30px;font-family: sans-serif;font-weight: bold;font-style: oblique;color: white;">TECH2SAINI</span>
+                                <div class="d-flex justify-content-start bd-highlight w-100 px-0 mx-0" style="height: 60px;">
+                                    <div class="p-2 flex-fillk bd-highlight d-flex py-0 align-items-center">
+                                        <img src="./files/logo.png" style="width:4rem;margin-top: 30px;" alt="">
+                                        <span class="lead display-5 fw-bold" style="font-family: sans-serif;font-weight: bold;font-style: oblique;color: white;">TECH2SAINI</span>
                                     </div>
-                                    <div class="lex-fill bd-highlight d-flex">
+                                   
+                                    <div class="lex-fill bd-highlight mx-auto d-flex">
 
                                         <div id="navbar" class="collapse navbar-collapse navigation-holder">
-                                            <button class="menu-close"><i class="ti-close"></i></button>
-
                                             <ul class="nav navbar-nav mb-2 mb-lg-0">
                                                 <li class="menu-item-has-children">
                                                     
@@ -129,25 +123,16 @@
                                                     <a onclick="goTo('contact')">Contact</a>
                                                 </li>
                                             </ul>
-                                            <button title="Chat-Boat Tech2Saini" style="background-color: transparent;border: none;outline: none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><img src="./files/chatbot.png" width="40px" alt=""></button>
-
+                                            <button title="Chat-Boat Monu Saini" style="background-color: transparent;border: none;outline: none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><img src="./files/chatbot.png" width="40px" alt=""></button>
+                                            
                                         </div>
                                     </div>
-                                    <div
-                                        class="flex-fill bd-highlight position-relative d-flex align-items-center justify-content-end">
-                                        <a target="_blank" id="resumebtn1"
-                                            href="https://hackerrank-resume.s3.us-east-1.amazonaws.com/uploads/26822873/MjY4MjI4NzM=.pdf"
-                                            class="position-absolute btn btn-success mx-1"
-                                            style="font-weight:bolder;border-radius: 20px !important;width: 100px;">
-                                            Resume
-                                            <i class="bi bi-file-arrow-down text-white"></i>
-                                        </a>
-                                        <a target="_blank" id="resumebtn2"
-                                            href="https://hackerrank-resume.s3.us-east-1.amazonaws.com/uploads/26822873/MjY4MjI4NzM=.pdf"
-                                            class="btn d-flex justify-content-center align-items-center position-absolute mx-1"
-                                            style="font-weight:bolder;border-radius: 20px !important;height: 30px;">
-                                            <i class="bi bi-file-arrow-down fs-2 text-white"></i>
-                                        </a>
+                                    <div class="px-1 my-auto">
+                                        <div class="d-flex justify-content-end gap-2 align-items-center">
+                                            <a role="button" onclick="document.getElementById('mobileMenus').style.left = '0%'" class="fs-1 text-light bi bi-list showmenu"></a>
+                                            <a href="https://hackerrank-resume.s3.us-east-1.amazonaws.com/uploads/26822873/MjY4MjI4NzM=.pdf" target="_blank" title="Download my resume" class="resume-1 fs-5 text-light bi bi-arrow-down border shadow rounded  border-2 h-100 border-light me-1"></a>
+                                            <a href="https://hackerrank-resume.s3.us-east-1.amazonaws.com/uploads/26822873/MjY4MjI4NzM=.pdf" target="_blank" title="Download my resume" class="resume-2 fs-5 text-light bi bi-arrow-down border shadow rounded-pill  border-2 h-100 border-light me-1 px-3">Resume</a>
+                                        </div>
                                     </div>
                                 </div>
                             </nav>
@@ -272,6 +257,7 @@
                     <div class="line-shape-2"><img src="https://elito-next.netlify.app/images/slider/line-2.png"
                             alt="" /></div>
                 </section>
+                
 
                 <!-- Skills and Experience -->
                 <div class="wpo-about-area section-padding" id="about">
@@ -281,7 +267,7 @@
                             <div class="col-lg-5 col-md-12 col-sm-12">
                                 <div class="wpo-about-exprience-wrap">
                                     <div class="wpo-about-exprience">
-                                        <h2>2+</h2><span>Years of Academic Experience</span>
+                                        <h2>2+</h2><span>Years of freelancing Experience</span>
                                     </div>
                                     <div class="client">
                                         <h6 class="text-white"><i class="bi bi-truck fs-3 me-1"></i> Delivered multiple projects with a focus on quality and efficiency</h6>
@@ -578,13 +564,35 @@
                             </div>
                         </div>
                         <div class="wpo-work-wrap projects-list">
-
                             <div class="card-body">
                                 <div class="card bg-dark p-3 card-item">
-                                    <div class="row">
+                                    <div class="row" style="flex-wrap: wrap-reverse;">
+                                        <div class="col">
+                                            <h4 class="text-white">Optimiseres - eCommerce Service Websiter</h4>
+                                            <span class="text-wheat">July, 2025 <strong class="fw-bold">(Frontend & Integration Developer)</strong></span>
+
+                                            <p>Developed a modern, responsive marketing website for an eCommerce consultancy firm. Implemented service pages, testimonial system, animated counters, portfolio gallery, and Vercel-GitHub integration.</p>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="text-white me-auto p-0">
+                                                    <small><i class="bi bi-geo-alt-fill"></i> Panchkula, Haryana (Freelance)</small>
+                                                </div>
+                                                <div class="text-white"><a target="_blank" href="https://www.optimiseres.com/" class="btn btn-outline-secondary">Explore <i class="bi bi-arrow-up-right-square"></i></a></div>
+                                           </div>
+                                        </div>
+                                        <div class="col-md-3 d-flex align-items-center">
+                                            <div class="text-center">
+                                                <img src="./files/optimiseres.PNG" class="rounded" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card bg-dark p-3 card-item">
+                                    <div class="row"style="flex-wrap: wrap-reverse;">
                                         <div class="col">
                                             <h4 class="text-white">Fake News Detection & Fact-Checking System</h4>
-                                            <span class="text-wheat">December,2024-Present <strong class="fw-bold">(Project Developer)</strong></span>
+                                            <span class="text-wheat">December 2024 - May 2025 <strong class="fw-bold">(Project Developer)</strong></span>
                             
                                             <p>Developed an ML-based system to detect fake news, integrate fact-checking APIs, and enhance trust through user authentication and verified channels. </p>
                                             <div class="d-flex flex-wrap">
@@ -606,11 +614,9 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="card-body">
                                 <div class="card bg-dark p-3 card-item">
-                                    <div class="row">
+                                    <div class="row"style="flex-wrap: wrap-reverse;">
                                         <div class="col">
                                             <h4 class="text-white">ksecure - Internet Security Enhancement</h4>
                                             <span class="text-wheat">Octomber, 2024 <strong class="fw-bold">(Project
@@ -635,7 +641,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="card bg-dark p-3 card-item">
-                                    <div class="row">
+                                    <div class="row"style="flex-wrap: wrap-reverse;">
                                         <div class="col">
                                             <h4 class="text-light">Sales Prediction System</h4>
                                             <span class="text-wheat">2024<strong class="fw-bold"> (Freelance)</strong></span>
@@ -647,7 +653,7 @@
                                                 <div class="text-white me-auto p-0">
                                                     <small><i class="bi bi-geo-alt-fill"></i> Delhi, (Remote)</small>
                                                 </div>
-                                                <div class="text-white"><a target="_blank" href="https://github.com/Tech2Saini/Sale-Prediction" class="btn btn-outline-secondary">Explore <i class="bi bi-arrow-up-right-square"></i></a></div>
+                                                <div class="text-white"><a target="_blank" href="https://github.com/Tech2Saini/Sale-Prediction" class="btn btn-outline-secondary d-none">Explore <i class="bi bi-arrow-up-right-square"></i></a></div>
                                             </div>
                                         </div>
                                         <div class="col-md-3 d-flex align-items-center">
@@ -660,7 +666,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="card bg-dark p-3 card-item">
-                                    <div class="row">
+                                    <div class="row" style="flex-wrap: wrap-reverse;">
                                         <div class="col">
                                             <h4 class="text-white">YouTube to MP3 Converter</h4>
                                             <span class="text-wheat">2024<strong class="fw-bold"> (Freelance)</strong></span>
@@ -681,9 +687,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-
+                            </div> 
                         </div>
                     </div>
                     <div class="shape-wk"><svg width="1500" height="1500" viewBox="0 0 1500 1500" fill="none">
@@ -1174,7 +1178,7 @@
                                         <div class="col col-lg-6 col-md-12 col-12">
                                             <div class="wpo-contact-info">
                                                 <div class="info-item px-3 py-3">
-                                                    <h2 class="w-100">Ashok Vihar phase 1,Wazirpur village, Delhi, 110052,</h2>
+                                                    <h2 class="w-100">Chhatarpur , New Delhi</h2>
                                                     <div class="info-wrap">
                                                         <div class="info-icon"><i
                                                                 class="bi text-white bi-building-add fs-4"></i>
@@ -1573,9 +1577,12 @@
     
     <div class="position-fixed z-index-top top-0 left-start" id="mobileMenus">
         <div class="menu-close">
-            <div class="clox text-end">
+            <div class="d-flex align-items-center">
+                <div class="me-auto">
+                    <h5 class="mx-2">Tech2Saini</h5>
+                </div>
                 <button class="btn btn-sm" onclick="hideSidebar()">
-                    <i class="text-white bi bi-x-lg"></i>
+                    <i class="text-white bi bi-x-lg fs-4"></i>
                 </button>
             </div>
         </div>
@@ -1587,8 +1594,11 @@
             <li class="d-flex justify-content-start align-items-center"><a onclick="goTo('newns_latterBlogs')" class="px-2"> <i class="bi bi-pencil-square px-3"></i> <span>Blogs</span></a></li>
             <li class="d-flex justify-content-start align-items-center"><a onclick="goTo('contact')" class="px-2"> <i class="bi bi-chat px-3"></i> <span>Contact</span></a></li>
             <li class="d-flex justify-content-start align-items-center">
-             <button title="Chat-Boat Tech2Saini" style="background-color: transparent;border: none;outline: none;color: white;" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><img src="./files/chatbot.png" width="30px" alt=""><span class="mx-2">Chat-Boat</span></button>
+             <a role="button" title="Chat-Boat Monu Saini" class="p-3" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <img src="./files/chatbot.png" width="30px" alt=""><span class="ms-3">Chat-Boat</span>
+            </a>
             </li>
+            <span class="mx-auto">Ask anything about monu saini in any format</span>
         </ul>
     </div>
 

@@ -137,12 +137,12 @@ let mobileMenus = document.getElementById("mobileMenus");
 
 window.onclick = (e) => {
     if (mobileMenus.offsetLeft > -5) {
-        mobileMenus.style.left = "-40%"
+        mobileMenus.style.left = "-150%"
     }
 }
 
 function hideSidebar() {
-    mobileMenus.style.left = '-40%';
+    mobileMenus.style.left = '-150%';
 }
 
 

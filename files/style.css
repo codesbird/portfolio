@@ -23,13 +23,18 @@ body {
     transform: scroll 0.5s;
 }
 
+.shape-p,
+.shape-1 {
+    display: none !important;
+}
 
 .fixed-navbar {
     position: relative;
     top: 0;
     width: 100%;
     z-index: 9999;
-    transition: all 0.5s ease-in-out; /* Smooth transition effect */
+    transition: all 0.5s ease-in-out;
+    /* Smooth transition effect */
 }
 
 .fixed-navbar.sticky {
@@ -37,21 +42,28 @@ body {
     top: 0;
 }
 
-nav{
+nav {
     transition: all 1s;
 }
 
-.navbar-blur{
-    background-color: #7272729c !important; /* Semi-transparent background */
-    backdrop-filter: blur(10px) !important; /* Blur effect */
-    -webkit-backdrop-filter: blur(10px) !important; /* Safari support */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Optional shadow for better visibility */
+.navbar-blur {
+    background-color: #7272729c !important;
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px) !important;
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px) !important;
+    /* Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    /* Optional shadow for better visibility */
 }
 
-.sidebtn{
-    background-color: #7272729c !important; /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+.sidebtn {
+    background-color: #7272729c !important;
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -112,6 +124,7 @@ nav{
 .services-item .hover-effect:hover div {
     background-color: #333a42 !important;
 }
+
 /* .services-item .hover-effect:nth-child(1):hover div {
     background-image: linear-gradient(151deg, #003af7, var(--software-back));
 }
@@ -154,51 +167,74 @@ nav{
     color: var(--text-color) !important;
 }
 
-.wpo-about-funfact div:nth-child(1):hover>div,.wpo-about-funfact div:nth-child(1):hover>div p {
+.wpo-about-funfact div:nth-child(1):hover>div,
+.wpo-about-funfact div:nth-child(1):hover>div p {
     color: var(--html-card) !important;
     background: linear-gradient(180deg, var(--html-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(2):hover>div,.wpo-about-funfact div:nth-child(2):hover>div p {
+
+.wpo-about-funfact div:nth-child(2):hover>div,
+.wpo-about-funfact div:nth-child(2):hover>div p {
     background: linear-gradient(180deg, var(--python-card), rgba(31, 30, 28, .6) 30.59%) !important;
     color: var(--python-card) !important;
 }
-.wpo-about-funfact div:nth-child(3):hover>div,.wpo-about-funfact div:nth-child(3):hover>div p {
+
+.wpo-about-funfact div:nth-child(3):hover>div,
+.wpo-about-funfact div:nth-child(3):hover>div p {
     color: var(--bootstrap-card) !important;
     background: linear-gradient(180deg, var(--bootstrap-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(4):hover>div,.wpo-about-funfact div:nth-child(4):hover>div p {
+
+.wpo-about-funfact div:nth-child(4):hover>div,
+.wpo-about-funfact div:nth-child(4):hover>div p {
     color: var(--js-card) !important;
     background: linear-gradient(180deg, var(--js-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(7):hover>div ,.wpo-about-funfact div:nth-child(7):hover>div p {
+
+.wpo-about-funfact div:nth-child(7):hover>div,
+.wpo-about-funfact div:nth-child(7):hover>div p {
     color: var(--api-card) !important;
     background: linear-gradient(180deg, var(--api-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(8):hover>div ,.wpo-about-funfact div:nth-child(8):hover>div p {
+
+.wpo-about-funfact div:nth-child(8):hover>div,
+.wpo-about-funfact div:nth-child(8):hover>div p {
     color: var(--git-card) !important;
     background: linear-gradient(180deg, var(--git-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(9):hover>div ,.wpo-about-funfact div:nth-child(9):hover>div p {
+
+.wpo-about-funfact div:nth-child(9):hover>div,
+.wpo-about-funfact div:nth-child(9):hover>div p {
     color: var(--numpy-card) !important;
     background: linear-gradient(180deg, var(--numpy-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(11):hover>div,.wpo-about-funfact div:nth-child(11):hover>div p {
+
+.wpo-about-funfact div:nth-child(11):hover>div,
+.wpo-about-funfact div:nth-child(11):hover>div p {
     color: #0bbedd !important;
-    background: linear-gradient(180deg,#0bbedd, rgba(31, 30, 28, .6) 30.59%) !important;
+    background: linear-gradient(180deg, #0bbedd, rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(12):hover>div,.wpo-about-funfact div:nth-child(12):hover>div p {
+
+.wpo-about-funfact div:nth-child(12):hover>div,
+.wpo-about-funfact div:nth-child(12):hover>div p {
     color: #9900ff !important;
     background: linear-gradient(180deg, #9900ff, rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(5):hover>div, .wpo-about-funfact div:nth-child(5):hover>div p {
+
+.wpo-about-funfact div:nth-child(5):hover>div,
+.wpo-about-funfact div:nth-child(5):hover>div p {
     color: var(--django-card) !important;
     background: linear-gradient(180deg, var(--django-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(10):hover>div,.wpo-about-funfact div:nth-child(10):hover>div p {
+
+.wpo-about-funfact div:nth-child(10):hover>div,
+.wpo-about-funfact div:nth-child(10):hover>div p {
     color: var(--extension-card) !important;
     background: linear-gradient(180deg, var(--extension-card), rgba(31, 30, 28, .6) 30.59%) !important;
 }
-.wpo-about-funfact div:nth-child(6):hover>div,.wpo-about-funfact div:nth-child(6):hover>div p {
+
+.wpo-about-funfact div:nth-child(6):hover>div,
+.wpo-about-funfact div:nth-child(6):hover>div p {
     color: #ff0464 !important;
     background: linear-gradient(180deg, #ff0464, rgba(31, 30, 28, .6) 30.59%) !important;
 }
@@ -217,11 +253,13 @@ nav{
 
 
 .projects-list div {
-    margin-top:5px;
+    margin-top: 5px;
 }
-.projects-list div div{
+
+.projects-list div div {
     transition: background 0.5s;
 }
+
 .projects-list div div:hover {
     background-color: #292e35 !important;
 }
@@ -237,10 +275,13 @@ nav{
     transition: transform 0.7s;
 }
 
-#news-blogs div p,#news-blogs div span {
+#news-blogs div p,
+#news-blogs div span {
     color: rgb(138, 138, 138) !important;
 }
-#news-blogs div p,#news-blogs div span {
+
+#news-blogs div p,
+#news-blogs div span {
     transition: color 0.7s;
 }
 
@@ -257,13 +298,15 @@ nav{
 
 
 #news-blogs div:hover {
-    background-color:#2d343b;
+    background-color: #2d343b;
 }
+
 #news-blogs div:hover img {
     transform: scale(1.4);
 }
 
-#news-blogs div:hover p,#news-blogs div:hover span {
+#news-blogs div:hover p,
+#news-blogs div:hover span {
     color: rgb(212, 212, 212) !important;
 }
 
@@ -290,46 +333,73 @@ nav{
 }
 
 
-#resumebtn1 {
-    transition: all 1s;
-}
-
-#resumebtn2 {
-    transition: all 1s;
-    opacity: 0;
+.resume-1 {
+    display: none;
 }
 
 @media (max-width: 520px) {
-    #resumebtn1 {
-        opacity: 0;
-        /* display: none; */
-        width: 0px;
+    .resume-1{
+        display: block;
     }
 
-    #resumebtn2 {
-        opacity: 1;
+    .resume-2 {
+        display: none;
     }
 }
+
 @media (min-width: 990px) {
-    #mobileMenus{
+    #mobileMenus {
         display: none !important;
     }
 }
 
+.showmenu{
+    background-color: unset !important;
+    width: unset !important; 
+    height:unset !important; 
+    text-align: unset !important; 
+    line-height:unset !important; 
+    border-radius:unse !important;
+}
+
 #mobileMenus {
-    z-index: 9;
-    background: #262626;
-    top: 11% !important;
+    z-index:20;
+    background: #262626d9;
+    backdrop-filter: blur(5px);
+    top: 0% !important;
+    height: 100vh;
     position: fixed;
     color: white;
     box-shadow: 0 0 5px black;
     border-radius: 5px;
-    left: -40%;
+    left: -140%;
     transition: all 0.7s;
+    width: 100%;
 }
 
 #mobileMenus ul li {
     transition: background 0.5s;
+}
+
+#mobileMenus ul li a {
+    font-size: 16px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    padding: 13px 35px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    background: #8080800d;
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+}
+#mobileMenus ul li a i{
+    font-size: 25px;
 }
 
 #mobileMenus ul li:hover {
